@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "MAML"
-  tagline: "Minimal. Human-readable. Machine-parsable."
+  tagline: "MAML is JSON with comments, unquoted keys, optional commas, and multiline strings."
 ---
 
 ```maml
@@ -22,12 +22,8 @@ hero:
 
   # Array of objects
   examples: [
-    {
-      name: "JSON", born: 2001
-    }
-    {
-      name: "MAML", born: 2025
-    }
+    { name: "JSON", born: 2001 }
+    { name: "MAML", born: 2025 }
   ]
 
   notes: """
