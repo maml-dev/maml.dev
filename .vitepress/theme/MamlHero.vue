@@ -83,7 +83,6 @@ import { withBase } from 'vitepress'
 /* ---- copy ---- */
 .hero-copy { min-width: 0; }
 .hero-name {
-  font-family: 'JetBrains Mono', var(--vp-font-family-mono);
   font-weight: 800;
   font-size: 88px;
   line-height: 1;
@@ -119,15 +118,15 @@ import { withBase } from 'vitepress'
 .btn:hover { transform: translateY(-1px); }
 .btn-primary {
   background: var(--vp-c-text-1);
-  color: var(--vp-c-bg);
+  color: var(--vp-c-bg) !important;
 }
 .btn-primary:hover { opacity: .85; }
 .btn-alt {
   background: var(--vp-c-bg-soft);
-  color: var(--vp-c-text-1);
+  color: var(--vp-c-text-1) !important;
   border-color: var(--vp-c-divider);
 }
-.btn-alt:hover { border-color: var(--vp-c-text-3); background: var(--vp-c-bg-mute); }
+.btn-alt:hover { border-color: var(--vp-c-text-3); background: var(--vp-c-bg-elv); }
 .btn-ghost {
   background: transparent;
   color: var(--vp-c-text-2);
@@ -159,7 +158,7 @@ import { withBase } from 'vitepress'
 .dot:nth-child(1) { background: #4a4a52; }
 .window-title {
   margin-left: 8px;
-  font-family: 'JetBrains Mono', var(--vp-font-family-mono);
+  font-family: var(--vp-font-family-mono);
   font-size: 12px;
   color: #6c6c76;
 }
@@ -167,7 +166,7 @@ import { withBase } from 'vitepress'
 .window-code {
   margin: 0;
   padding: 20px 22px;
-  font-family: 'JetBrains Mono', var(--vp-font-family-mono);
+  font-family: var(--vp-font-family-mono);
   font-size: 13.5px;
   line-height: 1.7;
   color: #e6e6e9;
@@ -181,7 +180,7 @@ import { withBase } from 'vitepress'
 .ln-n { color: #d6d6db; font-weight: 600; }
 
 @media (max-width: 860px) {
-  .hero { padding: 40px 22px 32px; }
+  .hero { padding: 40px 0 32px; }
   .hero-inner {
     grid-template-columns: 1fr;
     gap: 36px;
